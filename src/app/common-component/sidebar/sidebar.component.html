@@ -1,0 +1,91 @@
+<!-- <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
+    <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip"
+        data-bs-placement="right" data-bs-original-title="Icon-only">
+        <i class="bi-bootstrap fs-1"></i>
+    </a>
+    <ul
+        class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center justify-content-between w-100 px-3 align-items-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-original-title="Home">
+                <i class="bi-house fs-1"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-original-title="Dashboard">
+               <i class="bi-speedometer2 fs-1"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-original-title="Orders">
+                <i class="bi-table fs-1"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-original-title="Products">
+                <i class="bi-heart fs-1"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-original-title="Customers">
+                <i class="bi-people fs-1"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="dropdown">
+        <a href="#"
+            class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+            id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi-person-circle h2"></i>
+        </a>
+        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+        </ul>
+    </div>
+</div> -->
+
+
+
+
+<!-- <div class="sidebar" [class.closed]="isClosed">   
+    <button class="btn toggle-btn" (click)="toggleSidebar()">
+      <i class="bi" [class.bi-chevron-left]="!isClosed" [class.bi-chevron-right]="isClosed"></i>
+    </button>  
+    <ul class="nav flex-column mt-4">
+      <li class="nav-item" *ngFor="let item of menuItems">
+        <a href="#" class="nav-link d-flex align-items-center">
+          <i [class]="item.icon"></i>
+          <span class="ms-2 label" *ngIf="!isClosed">{{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div> -->
+
+
+  <div class="sidebar" [class.closed]="isClosed">
+    <!-- Toggle Button -->
+    <button class="btn toggle-btn" (click)="toggleSidebar()">
+      <i class="bi" [class.bi-chevron-left]="!isClosed" [class.bi-chevron-right]="isClosed"></i>
+    </button>
+  
+    <!-- Menu Items -->
+    <ul class="nav flex-column mt-4">
+      <li class="nav-item" *ngFor="let item of menuItems">
+        <a href="#" class="nav-link d-flex align-items-center">
+          <i [class]="item.icon"></i>
+          <span class="ms-2 label" *ngIf="!isClosed">{{ item.label }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+  

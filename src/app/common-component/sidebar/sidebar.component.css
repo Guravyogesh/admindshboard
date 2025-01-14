@@ -1,0 +1,88 @@
+  .sidebar {
+    width: 200px; /* Width when open */
+    transition: width 0.3s ease;
+    background-color: #063970; /* Dark background */
+    color: white;
+    overflow: hidden;
+    position: relative;
+  
+    /* Rounded corners */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  
+    /* Closed state */
+    &.closed {
+      width: 60px; /* Width when closed */
+  
+      .label {
+        display: none; /* Hide labels when closed */
+      }
+    }
+  
+    /* Toggle button styling */
+    .toggle-btn {
+      position: absolute;
+      top: 50%; /* Center vertically */
+      left: 100%; /* Position outside the sidebar */
+      transform: translate(-50%, -50%); /* Align to center horizontally */
+      border-radius: 50%;
+      background-color: #007bff; /* Button color */
+      color: white;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+  
+      /* Rotate the button slightly for better UX when closed */
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  
+    /* Menu items styling */
+    .nav-item {
+      padding: 10px;
+  
+      .nav-link {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+  
+        i {
+          font-size: 1.5rem;
+        }
+  
+        .label {
+          margin-left: 10px;
+          font-size: 1rem;
+        }
+  
+        &:hover {
+          background-color: #495057;
+        }
+      }
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 150px;
+  
+      &.closed {
+        width: 50px;
+      }
+    }
+  
+    .toggle-btn {
+      width: 35px;
+      height: 35px;
+      top: 50%;
+      left: 100%;
+    }
+  }
